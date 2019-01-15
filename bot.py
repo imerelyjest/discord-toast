@@ -14,10 +14,10 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-	if message.content.startswith("!hello'):
+	if message.content.startswith(".hello'):
 		msg = 'Hello {0.author.mention} How are you today?'.format(message)
 		await client.send_message(message.channel, msg)
-	if message.content.startswith('!bye'):
+	if message.content.startswith('.bye'):
 		msg = 'Goodbye {0.author.mention} Hope to see you again soon :wave:'.format(message)
 		await client.send_message(message.channel, msg)
 								  
